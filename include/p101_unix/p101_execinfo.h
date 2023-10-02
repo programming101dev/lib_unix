@@ -26,9 +26,10 @@ extern "C"
 {
 #endif
 
-    size_t p101_backtrace(const struct p101_env *env, struct p101_error *err, void **addrlist, size_t len);
-    char **p101_backtrace_symbols(const struct p101_env *env, struct p101_error *err, void *const *addrlist, size_t len);
-    int    p101_backtrace_symbols_fd(const struct p101_env *env, struct p101_error *err, void *const *addrlist, size_t len, int fd);
+    // TODO this is not the same on FreeBSD
+//    size_t p101_backtrace(const struct p101_env *env, struct p101_error *err, void **addrlist, size_t len);
+//    char **p101_backtrace_symbols(const struct p101_env *env, struct p101_error *err, void *const *addrlist, size_t len);
+//    int    p101_backtrace_symbols_fd(const struct p101_env *env, struct p101_error *err, void *const *addrlist, size_t len, int fd);
 
 #ifdef __cplusplus
 }

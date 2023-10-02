@@ -13,7 +13,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 # Source files for the library
 set(SOURCES
         ${CMAKE_SOURCE_DIR}/src/err.c
-        ${CMAKE_SOURCE_DIR}/src/execinfo.c
+#        ${CMAKE_SOURCE_DIR}/src/execinfo.c
         ${CMAKE_SOURCE_DIR}/src/fstab.c
         ${CMAKE_SOURCE_DIR}/src/getopt.c
         ${CMAKE_SOURCE_DIR}/src/ifaddrs.c
@@ -29,7 +29,7 @@ set(SOURCES
 # Define the list of header files to install
 set(HEADER_LIST
         ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_err.h
-        ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_execinfo.h
+#        ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_execinfo.h
         ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_fstab.h
         ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_getopt.h
         ${CMAKE_SOURCE_DIR}/include/p101_unix/p101_ifaddrs.h
