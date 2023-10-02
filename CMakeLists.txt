@@ -21,7 +21,7 @@ set(SOURCES
         ${CMAKE_SOURCE_DIR}/src/stdlib.c
         ${CMAKE_SOURCE_DIR}/src/ttyent.c
         ${CMAKE_SOURCE_DIR}/src/arpa/nameser.c
-        ${CMAKE_SOURCE_DIR}/src/net/ethernet.c
+#        ${CMAKE_SOURCE_DIR}/src/net/ethernet.c
         ${CMAKE_SOURCE_DIR}/src/sys/mount.c
         ${CMAKE_SOURCE_DIR}/src/sys/timex.c
 )
@@ -43,7 +43,7 @@ set(HEADER_LIST_ARPA
 )
 
 set(HEADER_LIST_NET
-        ${CMAKE_SOURCE_DIR}/include/p101_unix/net/p101_ethernet.h
+#        ${CMAKE_SOURCE_DIR}/include/p101_unix/net/p101_ethernet.h
 )
 
 set(HEADER_LIST_SYS

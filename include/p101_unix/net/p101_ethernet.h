@@ -18,10 +18,10 @@
  */
 
 #include <inttypes.h>
+#include <sys/types.h>
 #include <net/ethernet.h>
 #include <p101_env/env.h>
 #include <sys/socket.h>
-#include <sys/types.h>
 
 #ifdef __cplusplus
 extern "C"
