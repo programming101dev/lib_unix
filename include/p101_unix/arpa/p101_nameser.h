@@ -36,14 +36,10 @@ extern "C"
     int    p101_ns_name_ntol(const struct p101_env *env, struct p101_error *err, const unsigned char *src, unsigned char *dst, size_t dstsiz);
     int    p101_ns_name_ntop(const struct p101_env *env, struct p101_error *err, const unsigned char *src, char *dst, size_t dstsiz);
     int    p101_ns_name_pton(const struct p101_env *env, struct p101_error *err, const char *src, unsigned char *dst, size_t dstsiz);
-    int    p101_ns_name_unpack(const struct p101_env *env, struct p101_error *err, const unsigned char *msg, const unsigned char *eom, const unsigned char *src, unsigned char *dst,
-                               size_t dstsiz);
-    int    p101_ns_name_pack(const struct p101_env *env, struct p101_error *err, const unsigned char *src, unsigned char *dst, int dstsiz, const unsigned char **dnptrs,
-                             const unsigned char **lastdnptr);
-    int    p101_ns_name_uncompress(const struct p101_env *env, struct p101_error *err, const unsigned char *msg, const unsigned char *eom, const unsigned char *src, char *dst,
-                                   size_t dstsiz);
-    int    p101_ns_name_compress(const struct p101_env *env, struct p101_error *err, const char *src, unsigned char *dst, size_t dstsiz, const unsigned char **dnptrs,
-                                 const unsigned char **lastdnptr);
+    int    p101_ns_name_unpack(const struct p101_env *env, struct p101_error *err, const unsigned char *msg, const unsigned char *eom, const unsigned char *src, unsigned char *dst, size_t dstsiz);
+    int    p101_ns_name_pack(const struct p101_env *env, struct p101_error *err, const unsigned char *src, unsigned char *dst, int dstsiz, const unsigned char **dnptrs, const unsigned char **lastdnptr);
+    int    p101_ns_name_uncompress(const struct p101_env *env, struct p101_error *err, const unsigned char *msg, const unsigned char *eom, const unsigned char *src, char *dst, size_t dstsiz);
+    int    p101_ns_name_compress(const struct p101_env *env, struct p101_error *err, const char *src, unsigned char *dst, size_t dstsiz, const unsigned char **dnptrs, const unsigned char **lastdnptr);
     int    p101_ns_name_skip(const struct p101_env *env, struct p101_error *err, const unsigned char **ptrptr, const unsigned char *eom);
     void   p101_ns_name_rollback(const struct p101_env *env, struct p101_error *err, const unsigned char *src, const unsigned char **dnptrs, const unsigned char **lastdnptr);
 
