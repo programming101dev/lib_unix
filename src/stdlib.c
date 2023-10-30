@@ -16,7 +16,11 @@
 
 #include "p101_unix/p101_stdlib.h"
 #include <stdlib.h>
-
+#ifdef __has_include
+    #if __has_include("bsd/stdlib.h")
+        #include <bsd/stdlib.h>
+    #endif
+#endif
 uint32_t p101_arc4random(const struct p101_env *env)
 {
     uint32_t ret_val;
