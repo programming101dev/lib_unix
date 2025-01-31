@@ -250,8 +250,15 @@ if (CMAKE_C_COMPILER MATCHES ".*/clang.*")
     # Add a custom command to delete .gch files after the analysis
     add_custom_command(
         TARGET analysis POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/*.gch ${CMAKE_SOURCE_DIR}/include/p101_unix/arpa/*.gch ${CMAKE_SOURCE_DIR}/include/p101_unix/sys/*.gch
-        COMMENT "Removing .gch files"
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/*.gch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/*.pch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/arpa/*.gch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/arpa/*.pch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/net/*.gch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/net/*.pch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/sys/*.gch
+        COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_SOURCE_DIR}/include/p101_unix/sys/*.pch
+        COMMENT "Removing .gch/.pch files"
     )
 
     # Add dependencies including 'analysis' for Clang compiler
