@@ -19,6 +19,7 @@
 
 #include <arpa/nameser.h>
 #include <p101_env/env.h>
+#include <stdint.h>
 #include <sys/types.h>
 
 #ifdef __cplusplus
