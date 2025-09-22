@@ -15,7 +15,6 @@
  */
 
 #include "p101_unix/p101_getopt.h"
-#include <sys/mount.h>
 
 int p101_getopt_long(const struct p101_env *env, int argc, char *const argv[], const char *optstring, const struct option *longopts, int *longindex)
 {
